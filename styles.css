@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 25px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+h1,
+
+p {
+  font-size: 30px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.header {
+  background-image: linear-gradient(to top, #ece6d0, #faf7ee, #ffe4e4);
+  color: #8eb7a8;
+  padding: 20px 0;
+  text-align: center;
+  opacity: 1;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.header-content h1 {
+  font-size: 80px;
+  padding-left: 15%;
+}
+
+.header p {
+  color: #000000;
+  padding-left: 19%;
+}
+
+.nav-links {
+  list-style: none;
+  display: grid;
+  justify-content: center;
+  padding-right: 1000px;
+  padding-top: 150px;
+  height: 100px;
+  gap: 50px;
+  
+}
+
+.nav-links li {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.nav-links :hover {
+  color: #f83403;
+  transition: 0.5s;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 15px;
+  font-size: 30px;
+}
+
+.section {
+  height: 100vh;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#sobre-mim {
+  display: flex;
+  background-image: linear-gradient(to bottom, #ece6d0,  #ace7d2, #8eb7a8);
+  gap: 30px;
+  h2{
+    width: 100%;
+  }
+}
+.sobre{
+  margin-left: 300px;
+  margin-right: 300px;
+}
+#projetos{
+  background-image: linear-gradient(to top, #ece6d0,  #ace7d2, #8eb7a8);
+}
+.project-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+.project-card {
+  background: #ff5e5e;
+  padding: 2px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid black;
+  height: 250px;
+  width: 500px;
+
+  video {
+  margin-top: 30px;
+  width: 450;
+  }
+
+  img {
+    height: 245px;
+    width: 450;
+  }
+}
+
+.portfolio-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  margin:300px;
+  
+}
+
+#contato {
+  background-image: linear-gradient(to bottom, #ece6d0,  #ace7d2, #8eb7a8);
+  padding-left: 35%;
+
+}
+
+section .contatos {
+  display: flex;
+  background-color: #554c4c6e;
+  justify-content: center;
+  width: 50%;
+  border-radius: 30px;
+}
+
+.contact-links {
+  display: grid;
+ 
+  a {
+    text-decoration: none;
+    color: #f83403;
+    padding-top: 50px;
+    font-size: 30px;
+
+  }
+
+  a:hover {
+    color: #000000;
+  }
+}
+
+.contatos img {
+  height: 300px;
+  margin: 10px;
+  padding-right:100px;
+
+}
+#contato .titulos{
+  padding-right:800px;
+}
+
+/* Estilo para os elementos invisíveis */
+.animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Estilo para os elementos visíveis */
+.animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* Forma circular */
+  color: #ece7e6;
+  background-color: #f83403;
+  border: none;
+  height: 70px;
+  width: 70px;
+  position: fixed; /* Grudado na tela */
+  bottom: 20px; /* Distância da parte inferior */
+  right: 20px; /* Distância da parte direita */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+  z-index: 1000; /* Fica acima de outros elementos */
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button:hover {
+  transform: scale(1.1); /* Cresce levemente ao passar o mouse */
+  background-color: #d72f02; /* Muda a cor para um tom mais escuro */
+}
+
+footer{
+  padding-left: 40%;
+}
+
+/* Ícone interno */
+.material-symbols-outlined {
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .project-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-card {
+    width: 100%;
+    height: auto;
+  }
+}
